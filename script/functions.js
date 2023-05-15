@@ -13,23 +13,28 @@ function addToLibrary(title, author, pages, read) {
   library.push(book);
 }
 
-addToLibrary("The lord of the rings", "Tolkien", 600, "yes");
-addToLibrary("O mundo de sofia", "Jostein Gaarden", 500, "yes");
+addToLibrary("O Senhor dos Anéis", "Tolkien", 600, "lido");
+addToLibrary("O Hobbit", "Tolkien", 350, "lido");
+addToLibrary("Contos Inacabados", "Tolkien", 500, "Não lido");
 
-const list = document.querySelector("#card-container");
-const book1 = document.createElement("ul");
-const titleBook1 = document.createElement("li");
-const authorBook1 = document.createElement("li");
-const pagesBook1 = document.createElement("li");
-const readBook1 = document.createElement("li");
+library.forEach((element) => {
+  for (let i = 0; i <= library.length; i++) {
+    const list = document.querySelector("#card-container");
+    const book = document.createElement("ul");
+    const titleBook = document.createElement("li");
+    const authorBook = document.createElement("li");
+    const pagesBook = document.createElement("li");
+    const readBook = document.createElement("li");
 
-titleBook1.innerText = "Title: " + library[0].title;
-authorBook1.innerText = "Author: " + library[0].author;
-pagesBook1.innerText = "Number of pages: " + library[0].pages;
-readBook1.innerText = "Read: " + library[0].read;
+    titleBook.innerText = "Title: " + library[i].title;
+    authorBook.innerText = "Author: " + library[i].author;
+    pagesBook.innerText = "Number of pages: " + library[i].pages;
+    readBook.innerText = "Read: " + library[i].read;
 
-list.appendChild(book1);
-book1.appendChild(titleBook1);
-book1.appendChild(authorBook1);
-book1.appendChild(pagesBook1);
-book1.appendChild(readBook1);
+    list.appendChild(book);
+    book.appendChild(titleBook);
+    book.appendChild(authorBook);
+    book.appendChild(pagesBook);
+    book.appendChild(readBook);
+  }
+});

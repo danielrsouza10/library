@@ -10,9 +10,26 @@
     <title>Library</title>
 </head>
 <body>
-    <div id="button">
-        <button>Add new book</button>
-    </div>
+    <header><h1>Your Library</h1></header>
+
+    <form>
+        <label for="bookTitle">Title:</label>
+        <input type="text" id="bookTitle" name="bookTitle"><br>
+        <label for="bookAuthor">Author:</label>
+        <input type="text" id="bookAuthor" name="bookAuthor"><br>
+        <label for="bookPages">Number of pages:</label>
+        <input type="text" id="bookPages" name="bookPages"><br>
+
+        <label for="bookRead">Did you finish?</label><br>
+        <input type="radio" id="yes" name="read" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="read" value="no">
+        <label for="no">No</label>
+        
+        
+    </form>
+
+    
     <div id="card-container">
         
     </div>
