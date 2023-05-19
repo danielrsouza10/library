@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="./script/script.js" defer></script>
     <script src="./script/functions.js" defer></script>
     <title>Library</title>
 </head>
@@ -18,13 +17,15 @@
         <label for="bookAuthor">Author:</label>
         <input type="text" id="bookAuthor" name="bookAuthor"><br>
         <label for="bookPages">Number of pages:</label>
-        <input type="text" id="bookPages" name="bookPages"><br>
+        <input type="number" id="bookPages" name="bookPages"><br>
 
         <label for="bookRead">Did you finish?</label><br>
         <input type="radio" id="yes" name="read" value="yes">
         <label for="yes">Yes</label>
         <input type="radio" id="no" name="read" value="no">
         <label for="no">No</label>
+
+        <button type="button" id="add-to-library">Add to library</button>
         
         
     </form>
