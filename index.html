@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap"
+      rel="stylesheet"
+    />
     <script src="./script/functions.js" defer></script>
-    <title>Library</title>
-</head>
-<body>
-    <header><h1>Your Library</h1></header>
+    <title>Sua Biblioteca</title>
+  </head>
+  <body>
+    <header>
+      <h1>Sua Biblioteca</h1>
+      <hr />
+    </header>
 
-    <form>
-        <label for="bookTitle">Title:</label>
-        <input type="text" id="bookTitle" name="bookTitle"><br>
-        <label for="bookAuthor">Author:</label>
-        <input type="text" id="bookAuthor" name="bookAuthor"><br>
-        <label for="bookPages">Number of pages:</label>
-        <input type="number" id="bookPages" name="bookPages"><br>
+    <div id="content">
+      <form>
+        <label for="bookTitle">Título do livro:</label>
+        <input type="text" id="bookTitle" name="bookTitle" /><br />
+        <label for="bookAuthor">Escritor:</label>
+        <input type="text" id="bookAuthor" name="bookAuthor" /><br />
+        <label for="bookPages">Número de páginas:</label>
+        <input type="number" id="bookPages" name="bookPages" /><br />
 
-        <label for="bookRead">Did you finish?</label><br>
-        <input type="radio" id="yes" name="read" value="yes">
-        <label for="yes">Yes</label>
-        <input type="radio" id="no" name="read" value="no">
-        <label for="no">No</label>
+        <div class="buttons-container">
+          <div id="check-buttons">
+            <label id="bookRead" for="bookRead">Já leu o livro?</label><br />
+            <input type="radio" id="yes" name="read" value="Sim" checked />
+            <label for="yes">Sim</label>
+            <input type="radio" id="no" name="read" value="Não" />
+            <label for="no">Não</label>
+          </div>
+          <div>
+            <button type="button" id="add-to-library">
+              Adicionar a Biblioteca
+            </button>
+          </div>
+        </div>
+      </form>
 
-        <button type="button" id="add-to-library">Add to library</button>
-        
-        
-    </form>
-
-    
-    <div id="card-container">
-        
+      <div id="card-container"></div>
     </div>
-    
-</body>
+  </body>
 </html>
