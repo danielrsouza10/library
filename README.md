@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GithHub Repository](https://github.com/danielrsouza10/library)
-- Live Site URL: [Interactive Rating Component](https://danielrsouza10.github.io/library/)
+- Live Site URL: [Library](https://danielrsouza10.github.io/library/)
 
 ## My process
 
